@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - matheusprogbr</title>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Preço</th>
+        <th>&nbsp;</th>
+      </tr>
+    <tbody>
+      <% for(product of products){ %>
+      <tr>
+        <td><%= product.attributes.name %></td>
+        <td><%= product.attributes.price %> </td>
+        <td></td>
+      </tr>
+      <% } %>
+
+    </tbody>
+    </thead>
+  </table>
+</body>
+
+</html>
